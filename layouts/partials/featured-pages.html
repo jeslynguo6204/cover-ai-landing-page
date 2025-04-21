@@ -1,30 +1,16 @@
-<div class="row row-cols-1 g-4">
+<!-- Featured Tutorial Box -->
 
-    {{ range .Site.Taxonomies.tags.featured }}
-        <div class="col">
-
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a>
-                    </h4>
-                    <p class="text-text">
-                        {{ with .Params.description }}
-                            {{ . }}
-                        {{ else }}
-                            {{ .Summary | truncate 400 }}
-                        {{ end }}
-                    </p>
-                    <p class="text-text text-muted">
-                        <small>
-                            {{ .Lastmod | time.Format ":date_long" }}
-                        </small>
-                    </p>
-                </div>
-            </div>
-    
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+      <a href="https://your-tutorial-link.com" target="_blank" class="text-decoration-none">
+        <div class="card shadow-sm border-0 p-4">
+          <h3 class="h4 text-dark">How to Use Cover AI</h3>
+          <p class="text-muted mb-2">
+            Learn how to install, use, and get the most out of the Cover AI Chrome extension with our step-by-step guide.
+          </p>
+          <span class="text-primary fw-semibold">Read Tutorial →</span>
         </div>
-    {{ end }}
-</div>
+      </a>
+    </div>
+  </div>
+  
