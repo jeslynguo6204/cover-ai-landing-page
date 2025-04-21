@@ -8,17 +8,10 @@
     --bd-pink-rgb: 214, 51, 132;
   
     .bd-masthead {
-      padding: 3rem 0;
-      background-image: linear-gradient(
-        180deg,
-        rgba(var(--bs-body-bg-rgb), 0.01),
-        rgba(var(--bs-body-bg-rgb), 1) 85%
-      ),
-      radial-gradient(ellipse at top left, rgba(var(--bd-primary-rgb), 0.5), transparent 50%),
-      radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),
-      radial-gradient(ellipse at center right, rgba(var(--bd-primary-rgb), 0.5), transparent 50%),
-      radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
-    }
+        padding: 3rem 0;
+        background: linear-gradient(to bottom, #fff8fc 0%, #ffffff 100%);
+      }
+      
   
     .btn-bd-primary {
       --bs-btn-font-weight: 600;
