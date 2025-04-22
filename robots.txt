@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /404.html
+Sitemap: https://jeslynguo6205.github.io/cover-ai-landing-page/sitemap.xml
