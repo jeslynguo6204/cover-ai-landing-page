@@ -4,7 +4,7 @@ Welcome to the **Cover AI** landing page—a static website built with [Hugo](ht
 
 ## Live Demo
 
-https://jeslynguo6204.github.io/hugo-cover-ai-landing-page/
+https://jeslynguo6204.github.io/cover-ai-landing-page/
 
 ## Features
 
