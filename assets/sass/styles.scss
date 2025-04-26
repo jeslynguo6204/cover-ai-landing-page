@@ -1,75 +1,81 @@
+/* styles.css */
+
 .home {
-    --bd-primary: #570324;
-    --bd-accent: #8B2E4B;
-    --bd-light: #F0E1EA;
-    --bd-hover: #6A1935;
-    --bd-primary-rgb: 87, 3, 36;
-    --bd-accent-rgb: 139, 46, 75;
-    --bd-pink-rgb: 214, 51, 132;
-  
-    .bd-masthead {
-        padding: 3rem 0;
-        background: linear-gradient(to bottom, #fff8fc 0%, #ffffff 100%);
-      }
-      
-  
-    .btn-bd-primary {
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-primary);
-      --bs-btn-border-color: var(--bd-primary);
-      --bs-btn-border-radius: 0.5rem;
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: var(--bd-hover);
-      --bs-btn-hover-border-color: var(--bd-hover);
-      --bs-btn-focus-shadow-rgb: var(--bd-primary-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: var(--bd-accent);
-      --bs-btn-active-border-color: var(--bd-accent);
+  /* Brand Palette */
+  --bd-primary:    #245F73;           /* primary blue */
+  --bd-accent:     #733E24;           /* accent brown */
+  --bd-light:      #F2F0EF;           /* off-white background */
+  --bd-hover:      #1E4D63;           /* darker primary for hovers */
+  --bd-primary-rgb:36, 95, 115;
+  --bd-accent-rgb: 115, 62, 36;
+
+  /* Masthead background */
+  .bd-masthead {
+    padding: 3rem 0;
+    background: linear-gradient(
+      to bottom,
+      var(--bd-light) 0%,
+      #ffffff 100%
+    );
+  }
+
+  /* Primary button style */
+  .btn-bd-primary {
+    --bs-btn-font-weight:       600;
+    --bs-btn-color:             var(--bs-white);
+    --bs-btn-bg:                var(--bd-primary);
+    --bs-btn-border-color:      var(--bd-primary);
+    --bs-btn-border-radius:     0.5rem;
+    --bs-btn-hover-color:       var(--bs-white);
+    --bs-btn-hover-bg:          var(--bd-hover);
+    --bs-btn-hover-border-color:var(--bd-hover);
+    --bs-btn-focus-shadow-rgb:  var(--bd-primary-rgb);
+    --bs-btn-active-color:      var(--bs-white);
+    --bs-btn-active-bg:         var(--bd-accent);
+    --bs-btn-active-border-color: var(--bd-accent);
+  }
+}
+
+/* Navbar in your primary blue */
+.navbar {
+  @extend .navbar-dark;
+  padding: 0.75rem 0;
+  background-color: var(--bd-primary) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+
+  .nav-link {
+    color: #fff;
+    &:hover, &:focus {
+      color: var(--bd-light);
     }
   }
-  
-  .navbar {
-    @extend .navbar-dark;
-  
-    padding: 0.75rem 0;
-    background-color: #570324;
-    background-image: none;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  
-    .nav-link {
-      color: #fff;
-  
-      &:hover,
-      &:focus {
-        color: #F0E1EA;
-      }
-    }
-  
-    .navbar-brand img {
-      height: 40px;
-    }
+
+  .navbar-brand img {
+    height: 40px;
+    width:  40px;            /* match height for true square */
+    object-fit: contain;  
   }
-  
-  .text-violet {
-    color: #570324;
-  }
-  
-  .list {
-    .card {
-      transition: transform 0.2s ease-in-out;
-  
-      &:hover {
-        transform: scale(1.01);
-      }
-    }
-  }
-  
-  .navbar-brand {
+}
+
+/* Utility text color */
+.text-violet {
+  color: var(--bd-primary) !important;
+}
+
+/* Card hover effect (unchanged) */
+.list {
+  .card {
     transition: transform 0.2s ease-in-out;
-  
     &:hover {
-      transform: rotate(-2deg) scale(1.1);
+      transform: scale(1.01);
     }
   }
-  
+}
+
+/* Logo hover tilt (unchanged) */
+.navbar-brand {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: rotate(-2deg) scale(1.1);
+  }
+}

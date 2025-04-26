@@ -1,9 +1,9 @@
 // Bootstrap palette
-$primary:   #570324 !default;  // replaces the purple everywhere
-$secondary: #A67D92 !default;  // etc.
-$info:      #ffe484 !default;
-// …and any others ($success, $warning, $danger)
+$primary:    #245F73 !default;  // COVER AI primary blue
+$secondary:  #733E24 !default;  // COVER AI accent brown
+$info:       #245F73 !default;  // reuse primary for info, or pick another
+// (you can also override $success, $warning, $danger here if you like)
 
 // Body defaults
-$body-bg:   #ffffff !default;
-$body-color:#212529 !default;
+$body-bg:    #F2F0EF !default;  // very light off-white
+$body-color: #212529 !default;  // dark text
