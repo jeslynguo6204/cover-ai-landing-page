@@ -1,8 +1,8 @@
-# cover-ai-landing-page
+# Cover AI Landing Lage 
 
 Welcome to the **Cover AI** landing page—a static website built with [Hugo](https://gohugo.io/) and the Bootstrap theme. This site showcases the features and benefits of Cover AI, your AI-powered cover-letter generator.
 
-## Live Demo
+## Live Access
 
 https://jeslynguo6204.github.io/cover-ai-landing-page/
 
